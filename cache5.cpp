@@ -1,4 +1,4 @@
-//cache implementation
+//cache implementation for matrix multiplication
 #include <iostream>
 #include <unordered_map>
 #include <vector>
