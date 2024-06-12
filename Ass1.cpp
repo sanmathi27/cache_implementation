@@ -23,8 +23,8 @@ namespace {
       for (BasicBlock &BB : F) {
         numBasicBlocks++;
         int numInstructions = BB.size();
-        int numSuccessors = succ_size(BasicBlock &&BB);
-        int numPredecessors = pred_size(BasicBlock &&BB);
+        int numSuccessors = succ_size(BasicBlock &BB);
+        int numPredecessors = pred_size(BasicBlock &BB);
 
 
         // Get number of successors
