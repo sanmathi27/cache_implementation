@@ -22,23 +22,17 @@ namespace {
       // Iterate over each basic block in the function
       for (BasicBlock &BB : F) {
         numBasicBlocks++;
-        int numInstructions = 0;
-        int numSuccessors = 0;
-        int numPredecessors = 0;
+        int numInstructions = BB.size();
+        int numSuccessors = succ_size(BasicBlock &&BB);
+        int numPredecessors = pred_size(BasicBlock &&BB);
 
-        // Iterate over each instruction in the basic block
-        for (Instruction &I : BB) {
-          numInstructions++;
-        }
 
         // Get number of successors
-        numSuccessors = BB.getTerminator()->getNumSuccessors();
         if (numSuccessors > maxSuccessors) {
           maxSuccessors = numSuccessors;
         }
 
         // Get number of predecessors
-        numPredecessors = std::distance(pred_begin(&BB), pred_end(&BB));
         if (numPredecessors > maxPredecessors) {
           maxPredecessors = numPredecessors;
         }
