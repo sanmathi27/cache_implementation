@@ -1,0 +1,20 @@
+Function: main
+  Basic Block: 1
+    Number of Instructions: 3
+    Number of Successors: 1
+    Number of Predecessors: 0
+  Basic Block: 2
+    Number of Instructions: 4
+    Number of Successors: 1
+    Number of Predecessors: 1
+  Basic Block: 3
+    Number of Instructions: 4
+    Number of Successors: 1
+    Number of Predecessors: 1
+  Basic Block: 4
+    Number of Instructions: 4
+    Number of Successors: 0
+    Number of Predecessors: 1
+Number of Basic Blocks: 4
+Maximum Successors: 1
+Maximum Predecessors: 1
